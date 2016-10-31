@@ -1,0 +1,267 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.colorBoxContainer {
+  width: 100%;
+  height: 72vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.colorRow {
+ display: flex;
+ width: 100%;
+ flex-direction: row;
+}
+
+.colorBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.blackClass {
+ display: none;
+ font-size: 100px;
+ justify-content: center;
+  width: 100%;
+  background-color: #000 !important;
+}
+
+.colorBox p {
+  align-self: center;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  color: #222;
+  font-size: 1.5em;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/*//////////////////////////////////////////
+//////// SELECTED COLORS IN HEADER ////////
+////////////////////////////////////////*/
+
+.colorHeader {
+  height: 16vh;
+  background-color: #222;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} 
+
+.headerColorsContainer, .headerHexValues {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 75vw;
+  max-width:75vw;
+  min-height: 4vh;
+  background-color: #333;
+  margin: 1%;
+  min-height: 30%;
+  align-items: center;
+}
+
+.selectedColor {
+  align-self: center;
+  width: 10.4%;
+  height: 1.4em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin: 1%;
+}
+
+.hexBox {
+  display: flex:
+  justify-content: center;
+  align-self: center;
+  width: 10.4%;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin: 1%;
+  text-align: center;
+}
+
+.hexValue {
+  color: #fff;
+  align-self: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0.9%;
+}
+
+.panelMessage {
+  color: #fff;
+  align-self: center;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/*////////////////////////////////////////
+//////// Color Selection Buttons ////////
+//////////////////////////////////////*/
+
+.colorBtnsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #1e1e1e;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.colorBtn {
+  background-color: #444;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin: 1em .75em;
+  display: flex;
+  justify-content: center;
+}
+
+.colorBtn:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: ease-in-out;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.innerCircle {
+  background-color: #1e1e1e;
+  width: 1em;
+  height: 1em;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.cyan {
+  background-color: #00FFFF;
+}
+.magenta {
+  background-color: #FF00FF;
+}
+
+.yellow {
+  background-color: #ffff00;
+}
+
+.orange {
+  background-color: #ffa500;
+}
+
+.red {
+  background-color: #FF0000;
+}
+
+.purple {
+  background-color: #800080;
+}
+
+.blue {
+  background-color: #0000ff;
+}
+
+/*///////////////////////////
+//////// NAVIGATION ////////
+/////////////////////////*/
+
+.navigationContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #1e1e1e;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.brand {
+  color: #1565c0;
+  margin-left: 40px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navBtn {
+  background-color: #444;
+  color: #fff;
+  border: 0;
+  min-height: 5vh;
+  padding: 10px;
+  margin: .5em;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+    
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+      .colorBox p {
+        font-size: 1.5em;
+      }
+
+       .hexValue {
+        font-size: 1.2em;
+      }
+    }
+
+     @media only screen and (max-width : 850px) {
+      .hexValue {
+        font-size: .7em;
+      }
+       .hexBox {
+      flex-wrap: nowrap;
+     }
+
+     
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+      .colorBox p {
+        font-size: 1.0em;
+      }
+
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+      .colorBox p {
+        font-size: 1.0em;
+      }
+
+      .hexBox {
+      flex-wrap: wrap;
+      /* margin-right: 10px;*/
+      width: 23%;
+      }
+
+      .hexValue {
+        font-size: 0.8em;
+        margin-right: 5px;
+      }
+
+      .headerHexValues {
+        height: 8vh;
+      }
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }
+}
